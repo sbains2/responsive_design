@@ -1,0 +1,75 @@
+/* Add your CSS styles here */
+h1,
+h2 {
+    color: #333;
+}
+
+p {
+    color: #444;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Custom Style for table */
+.custom-style-2 th {
+    text-align: right;
+}
+
+/* Ribbon Navigation Bar Styles */
+/* Ribbon Navigation Bar */
+.ribbon {
+    background-color: #63a211; /* Change this to your preferred background color */
+    overflow: hidden;
+}
+
+/* Ribbon Links */
+.ribbon a {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0); /* Link text color */
+    text-align: center;
+    padding: 14px 16px; /* Adjust the padding to fit your content */
+    text-decoration: none;
+}
+
+/* Active Link */
+.ribbon a.active {
+    background-color: #97df07; /* Change this to your preferred active link color */
+}
+
+/* Hover Effect */
+.ribbon a:hover {
+    background-color: #555; /* Change this to your preferred hover color */
+}
+
+.custom-style-3.larger-video {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.custom-style-3.larger-video iframe {
+    max-width: 80%;
+}
+
+.larger-video {
+    height: 80vh;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}

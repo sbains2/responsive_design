@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        /* Ribbon Navigation Bar Styles */
+        /* Ribbon Navigation Bar */
+        .ribbon {
+            background-color: #63a211; /* Change this to your preferred background color */
+            overflow: hidden;
+        }
+        
+        /* Ribbon Links */
+        .ribbon a {
+            float: left;
+            display: block;
+            color: rgb(0, 0, 0); /* Link text color */
+            text-align: center;
+            padding: 14px 16px; /* Adjust the padding to fit your content */
+            text-decoration: none;
+        }
+        
+        /* Active Link */
+        .ribbon a.active {
+            background-color: #97df07; /* Change this to your preferred active link color */
+        }
+        
+        /* Hover Effect */
+        .ribbon a:hover {
+            background-color: #555; /* Change this to your preferred hover color */
+        }
+        
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        }
+        
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less */
+        }
+    </style>
+</head>
+<body>
+    <!-- Ribbon Navigation bar -->
+    <div class="ribbon">
+        <!-- Active link pointing to the index.html page -->
+        <a class="active" href="index.html">HOME</a>
+        <!-- Links to other sections -->
+        <a href="section1.html">WIKI</a>
+        <a href="section2.html">Images</a>
+        <a href="section3.html">SECRET</a>
+    </div>
+    
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">CLICK ME</button>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Whoaaa you found a secret corner of the website</p>
+            <img src="https://media.tenor.com/kg--P3zmvkIAAAAd/fortnite-dance.gif" alt="GIF">
+        </div>
+    </div>
+    
+    <!-- JavaScript code for modal functionality -->
+    <script>
+        // Get the modal element
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    
+<button onclick="myFunction()">Button</button>
+<div class="container">
+    <div class="caption">Press the button and look below</div>
+    <div id="myDIV">
+        Peek-a-boo
+    </div>
+</div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

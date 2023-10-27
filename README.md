@@ -1,2 +1,2 @@
 # responsive_design
-GEOG 328 Lab 2
+# Geog 328 Lab 2
