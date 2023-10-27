@@ -25,7 +25,7 @@ img {
 /* Ribbon Navigation Bar Styles */
 /* Ribbon Navigation Bar */
 .ribbon {
-    background-color: #63a211; /* Change this to your preferred background color */
+    background-color: #63a211; 
     overflow: hidden;
 }
 
@@ -33,20 +33,20 @@ img {
 .ribbon a {
     float: left;
     display: block;
-    color: rgb(0, 0, 0); /* Link text color */
+    color: rgb(0, 0, 0); 
     text-align: center;
-    padding: 14px 16px; /* Adjust the padding to fit your content */
+    padding: 14px 16px; 
     text-decoration: none;
 }
 
 /* Active Link */
 .ribbon a.active {
-    background-color: #97df07; /* Change this to your preferred active link color */
+    background-color: #97df07; 
 }
 
 /* Hover Effect */
 .ribbon a:hover {
-    background-color: #555; /* Change this to your preferred hover color */
+    background-color: #555; 
 }
 
 .custom-style-3.larger-video {
