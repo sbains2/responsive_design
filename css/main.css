@@ -1,4 +1,8 @@
-/* Add your CSS styles here */
+/* This is the Main CSS Styling File for index.html. 
+The Purpose of this document is to style the various 
+html elements for the responsive_design repository, 
+which are elements to build a website for GEOG 328 */
+
 h1,
 h2 {
     color: #333;
@@ -60,7 +64,11 @@ img {
 }
 
 .larger-video {
-    height: 80vh;
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body,
